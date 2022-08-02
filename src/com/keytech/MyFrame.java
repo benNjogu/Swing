@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MyFrame extends JFrame {
-    MyFrame(){
+    /*MyFrame(){
         this.setTitle("Mens Conference");//sets title of this
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//exit out of application
         this.setResizable(false);//prevent this from being resized
@@ -18,5 +18,5 @@ public class MyFrame extends JFrame {
         this.getContentPane().setBackground(Color.green);//will change colour of background
         this.getContentPane().setBackground(new Color(0x1371999));//will change colour of background
 
-    }
+    }*/
 }

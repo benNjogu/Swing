@@ -1,28 +1,43 @@
 package com.keytech;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 
 public class Main {
 
     public static void main(String[] args) {
-       /* //A JFrame is a GUI window to add components to
-        JFrame frame = new JFrame();//creates a frame
-        frame.setTitle("Mens Conference");//sets title of frame
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//exit out of application
-        frame.setResizable(false);//prevent frame from being resized
+        //JLabel is a GUI display area for a string of text, an image or both
 
-        frame.setSize(420, 420);//sets the x-dimension and the y-dimension of the frame
-        frame.setVisible(true);//make frame visible
+        ImageIcon image = new ImageIcon(Main.class.getResource("/images/bro1.jpg"));
+        Border border = BorderFactory.createLineBorder(new Color(13, 7, 99), 3);
 
-        //below we use getResource since our image is located in a package
-        ImageIcon image = new ImageIcon(Main.class.getResource("/images/TDD.PNG"));//create image icon
-        frame.setIconImage(image.getImage());//change icon of frame
-        frame.getContentPane().setBackground(Color.green);//will change colour of background
-        frame.getContentPane().setBackground(new Color(0x1371999));//will change colour of background
-*/
+        JLabel label = new JLabel();//Create a label
+        label.setText("Dude, do you write code?");//set text of Label.
+        label.setIcon(image);
+        label.setHorizontalTextPosition(JLabel.CENTER);//set text LEFT, CENTER or RIGHT of imageIcon
+        label.setVerticalTextPosition(JLabel.TOP);//set text TOP, CENTER or BOTTOM of imageIcon
+        label.setForeground(new Color(13, 7, 99));//set font color of text
+        label.setFont(new Font("MV Boli", Font.ROMAN_BASELINE, 48));//set font of text
+        label.setIconTextGap(-4);//set gap of text to image
+        label.setBackground(Color.darkGray);//set background color
+        label.setOpaque(true);//display background color
+        label.setBorder(border);
+        label.setVerticalAlignment(JLabel.CENTER);//set vertical position of icon+text within label
+        label.setHorizontalAlignment(JLabel.CENTER);//set horizontal position of icon+text within label
+        //label.setBounds(100,100,240, 240);//set x,y position within frame as well as dimensions
 
-       new MyFrame();
+
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500, 500);
+        //frame.setLayout(null);
+        frame.setVisible(true);
+        frame.add(label);
+        frame.setBackground(new Color(0x1371999));
+        frame.setIconImage(image.getImage());
+        //NB: Add all your components before using pack
+        frame.pack();//resize the frame to accommodate all the components that you have
 
     }
 }
