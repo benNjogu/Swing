@@ -6,7 +6,7 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
-        //A JFrame is a GUI window to add components to
+       /* //A JFrame is a GUI window to add components to
         JFrame frame = new JFrame();//creates a frame
         frame.setTitle("Mens Conference");//sets title of frame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//exit out of application
@@ -20,6 +20,9 @@ public class Main {
         frame.setIconImage(image.getImage());//change icon of frame
         frame.getContentPane().setBackground(Color.green);//will change colour of background
         frame.getContentPane().setBackground(new Color(0x1371999));//will change colour of background
+*/
+
+       new MyFrame();
 
     }
 }
