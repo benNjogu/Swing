@@ -11,33 +11,26 @@ public class Main {
 
         //3 common managers
 
-        //Flow layout - places components in a row, sized at their preffered size.
-        //              if the horizontal space in the container is too small,
-        //              the flowLayout class uses the next available row.
+        //Grid layout - places components in a grid of cells.
+        //              Each component takes all the available space within its cell,
+        //              and each cell is the same size.
 
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 500);
-        frame.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
+        frame.setLayout(new GridLayout(3, 3, 10, 10));
 
-        JPanel panel = new JPanel();
-        panel.setPreferredSize(new Dimension(100, 250));
-        panel.setBackground(Color.lightGray);
-        panel.setLayout(new FlowLayout());
+        frame.add(new JButton("1"));
+        frame.add(new JButton("2"));
+        frame.add(new JButton("3"));
+        frame.add(new JButton("4"));
+        frame.add(new JButton("5"));
+        frame.add(new JButton("6"));
+        frame.add(new JButton("7"));
+        frame.add(new JButton("8"));
+        frame.add(new JButton("9"));
 
-        panel.add(new JButton("1"));
-        panel.add(new JButton("2"));
-        panel.add(new JButton("3"));
-        panel.add(new JButton("4"));
-        panel.add(new JButton("5"));
-        panel.add(new JButton("6"));
-        panel.add(new JButton("7"));
-        panel.add(new JButton("8"));
-        panel.add(new JButton("9"));
-        panel.add(new JButton("0"));
-
-        frame.add(panel);
         frame.setVisible(true);
 
     }
