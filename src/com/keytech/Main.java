@@ -6,9 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //JSlider - GUI Component that lets user enter a value
-        //          by using an adjustable sliding knob on a track
+        //JProgressBar - Visual aid to let the user know an operation is processing.
 
-        new MyJSliderFrame();
+        new MyProgressBarFrame();
     }
 }
