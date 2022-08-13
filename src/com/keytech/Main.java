@@ -6,8 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //JRadioButton - One or more buttons in a grouping in which only 1 may selected per group.
+        //JComboBox - A component that combines a button or editable field and a drop-down list
 
-        new MyRadioButtonFrame();
+        new MyComboBoxFrame();
     }
 }
