@@ -6,7 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //JCheckBox = a GUI component that can be selected or diselected.
-        new MyCheckBoxFrame();
+        //JRadioButton - One or more buttons in a grouping in which only 1 may selected per group.
+
+        new MyRadioButtonFrame();
     }
 }
