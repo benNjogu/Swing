@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //JFileChooser - A GUI mechanism that let's a user choose a file(helpful for opening or saving files)
-        new MyFileChooserFrame();
+        //JColorChooser - A GUI Mechanism that let's a user choose a color
+        new ColorChooserFrame();
     }
 }
